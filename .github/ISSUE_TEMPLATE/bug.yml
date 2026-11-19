@@ -1,0 +1,28 @@
+name: Bug
+description: A bug in the game, a mod, the server or the tooling.
+labels: ["bug"]
+projects: ["marauders-pve/1"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: What was seen
+      description: What happened, what was expected. One problem per issue.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (masked)
+      description: >
+        Masked log lines, video time of the marker, steps to reproduce. Do not upload tokens, IDs, keys or recordings;
+        the clip path stays local.
+    validations:
+      required: false
+  - type: textarea
+    id: cause
+    attributes:
+      label: Suspected cause
+      description: If known. Otherwise leave it empty.
+    validations:
+      required: false
